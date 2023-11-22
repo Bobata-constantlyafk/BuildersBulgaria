@@ -1,9 +1,9 @@
 <template>
   <div className="indexMain">
     <div className="headings">
-        <h1 className="first-h1" style="color: white;">Майсторство</h1>
+        <h1 className="first-h1">Майсторство</h1>
         <h3>без компромиси</h3>
-        <h1 className="second-h1" style="color: white;">Усилия </h1>
+        <h1 className="second-h1">Усилия </h1>
         <h3>без граници</h3>
     </div>
   </div>
@@ -14,7 +14,7 @@
 import About from './about.vue';
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 @font-face {
   font-family: 'Basil Regular';
@@ -38,6 +38,7 @@ import About from './about.vue';
         font-family: 'Basil Regular';
         margin-top: 0%;
         margin-bottom: 0%;
+        color: white;
         }
         h3 {
         font-family: 'Basil Regular';
