@@ -4,7 +4,7 @@
         <nav class="nav">
           <NuxtLink to="/"><img class="logo" src="/BK-Logo-Centered.png" alt=""></NuxtLink>
           <ul class="nav-ul">
-            <NuxtLink class="link" to="/about">ЗА НАС</NuxtLink>
+            <NuxtLink class="link" to="/services">ЗА НАС</NuxtLink>
             <NuxtLink class="link" to="/services">УСЛУГИ</NuxtLink>
             <NuxtLink class="link" to="/contacts">КОНТАКИ</NuxtLink>
             <NuxtLink class="link" to="/projects">ПРОЕКТИ</NuxtLink>
