@@ -1,13 +1,13 @@
 <template>
     <div>
       <header>
-        <nav className="nav">
-          <NuxtLink to="/"><img className="logo" src="/BK-Logo-Centered.png" alt=""></NuxtLink>
-          <ul className="nav-ul">
-            <NuxtLink className="link" to="/about">ЗА НАС</NuxtLink>
-            <NuxtLink className="link" to="/services">УСЛУГИ</NuxtLink>
-            <NuxtLink className="link" to="/contacts">КОНТАКИ</NuxtLink>
-            <NuxtLink className="link" to="/projects">ПРОЕКТИ</NuxtLink>
+        <nav class="nav">
+          <NuxtLink to="/"><img class="logo" src="/BK-Logo-Centered.png" alt=""></NuxtLink>
+          <ul class="nav-ul">
+            <NuxtLink class="link" to="/about">ЗА НАС</NuxtLink>
+            <NuxtLink class="link" to="/services">УСЛУГИ</NuxtLink>
+            <NuxtLink class="link" to="/contacts">КОНТАКИ</NuxtLink>
+            <NuxtLink class="link" to="/projects">ПРОЕКТИ</NuxtLink>
           </ul>
         </nav>
       </header>

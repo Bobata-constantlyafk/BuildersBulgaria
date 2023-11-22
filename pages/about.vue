@@ -1,5 +1,5 @@
 <template>
-  <div className="aboutMain">
+  <div class="aboutMain">
     <p> В БълдърсБългария се стремим да предоставяме изключителни строителни услуги, които надхвърлят вашите очаквания. Ангажирани сме да работим с вас, за да предоставяме висококачествена изработка, на цени които отговарят на вашия бюджет.</p>
     <p> Нашият екип от опитни и отдадени професионалисти се грижи за всеки аспект от вашия проект, от първоначалното планиране и проектиране до окончателното изпълнение и завършващи щрихи.</p>
   </div>
@@ -11,14 +11,15 @@
 
 <style lang="scss">
   .aboutMain{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     p{
       font-size: 1.3rem;
-      padding-inline: 1%;
+      padding-inline: 3%;
+      text-align: justify;
     }
   }
 </style>

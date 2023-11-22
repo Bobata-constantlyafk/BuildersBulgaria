@@ -1,9 +1,9 @@
 <template>
-  <div className="indexMain">
-    <div className="headings">
-        <h1 className="first-h1">Майсторство</h1>
+  <div class="indexMain">
+    <div class="headings">
+        <h1 class="first-h1">Майсторство</h1>
         <h3>без компромиси</h3>
-        <h1 className="second-h1">Усилия </h1>
+        <h1 class="second-h1">Усилия </h1>
         <h3>без граници</h3>
     </div>
   </div>
