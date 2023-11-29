@@ -12,8 +12,8 @@
 <style lang="scss">
 @font-face {
   font-family: 'Basil Regular';
-  src: url('~/Basil-Regular.ttf') format('truetype'),
-       url('~/Basil-Regular.otf') format('opentype');
+  src: url('/Basil-Regular.ttf') format('truetype'),
+       url('/Basil-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
