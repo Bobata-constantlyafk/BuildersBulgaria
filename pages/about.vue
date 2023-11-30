@@ -20,6 +20,7 @@
   .aboutMain{
     margin-left: 4%;
     margin-right: 4%;
+    margin-bottom: 3%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
