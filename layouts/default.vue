@@ -31,6 +31,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
   .nav {
       display: grid;
       grid-template-columns: 1fr 4fr;
