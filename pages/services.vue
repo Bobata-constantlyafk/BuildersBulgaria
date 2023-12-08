@@ -1,10 +1,24 @@
 <template>
   <div class="servicesMain">
-    <h1>Сайтът е в процес на изработка</h1>
-    <p>Благодарим за търпението</p>
+    <h1>Услуги</h1>
+    <div class="services-images">
+      <div>
+        <img class="services-image" src="/planning.png" alt="Varna">
+        <h2>Планиране</h2>
+      </div>
+
+      <div>
+        <img class="services-image" src="/housemaking.png" alt="">
+        <h2>Строеж</h2>
+      </div>
+
+      <div>
+        <img class="services-image" src="/housemaking.png" alt="Teteven">
+        <h2>Ремонт</h2>
+      </div>
+    </div>
   </div>
 </template>
-  
 
 <style lang="scss">
 @font-face {
@@ -15,21 +29,37 @@
   font-style: normal;
 }
 
-.servicesMain{
+.servicesMain {
   display: grid;
-  grid-template-rows: 5rem 2rem 2rem;
+  grid-template-rows: 180px 400px;
   justify-content: center;
-  align-content: center;
-  margin-top: 0%;
-  height:80vh;
-  background-image: url('/house3.png');
-  background-size: cover;
-  background-position: center;
+  height: 100%;
+  overflow: hidden;
 
-  h1, p{
-    color: white;
+  h1,h2{
     text-align: center;
     font-family: 'Basil Regular';
+  }
+
+  h1{
+    align-self: end;
+    font-size: 4rem;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .services-images{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 30rem 30rem 30rem;
+    justify-items: center;
+
+      .services-image {
+      width: auto;
+      height: 250px;
+      }
   }
 }
 </style>

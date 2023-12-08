@@ -1,5 +1,5 @@
 <template>
-  <div class="galleryMain" v-cloak>
+  <div class="galleryMain">
     <img class="gallery-image" src="/House-Trad.png" alt="house">
     <img class="gallery-image" src="/House-modern.png" alt="house">
     <img class="gallery-image" src="/Italian-house.png" alt="house">

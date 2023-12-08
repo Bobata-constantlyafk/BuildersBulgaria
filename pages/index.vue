@@ -12,6 +12,7 @@ import Home from './home.vue';
 import Gallery from './gallery.vue';
 import Collabs from './collabs.vue';
 import Contacts from './contacts.vue';
+import Services from './services.vue';
 </script>
 
 <style lang="scss">

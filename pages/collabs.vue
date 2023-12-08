@@ -1,5 +1,5 @@
 <template>
-  <div class="collabsMain" v-cloak>
+  <div class="collabsMain">
     <h1>Колаборатори</h1>
     <div class="collabs-images">
       <img class="collabs-image" src="/Sofia.png" alt="">
