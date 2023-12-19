@@ -6,14 +6,6 @@
 </template>
   
 <style lang="scss">
-@font-face {
-  font-family: 'Basil Regular';
-  src: url('/Basil-Regular.ttf') format('truetype'),
-       url('/Basil-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .projectsMain{
   display: grid;
   grid-template-rows: 5rem 2rem 2rem;

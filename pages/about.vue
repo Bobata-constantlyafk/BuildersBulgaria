@@ -10,13 +10,6 @@
 </script>
 
 <style lang="scss">
-@font-face {
-  font-family: 'Basil Regular';
-  src: url('/Basil-Regular.ttf') format('truetype'),
-       url('/Basil-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
   .aboutMain{
     margin-left: 2%;
     margin-right: 2%;

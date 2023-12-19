@@ -2,9 +2,8 @@
     <div>
       <header>
         <nav class="nav">
-          <NuxtLink to="/"><img class="logo" src="/BK-Logo-Centered.png" alt=""></NuxtLink>
           <ul class="nav-ul">
-            <NuxtLink class="link" to="/">ЗА НАС</NuxtLink>
+            <NuxtLink class="link" to="/">НАЧАЛО</NuxtLink>
             <NuxtLink class="link" to="/services">УСЛУГИ</NuxtLink>
             <NuxtLink class="link" to="/contacts">КОНТАКИ</NuxtLink>
             <NuxtLink class="link" to="/projects">ПРОЕКТИ</NuxtLink>
@@ -35,28 +34,37 @@
       display: grid;
       grid-template-columns: 1fr 4fr;
       align-items: center;
-      background-color: transparent;
+      background-color: rgb(0,0,0,0.6);
       margin-bottom: 0rem;
-      position: absolute;
+      position:absolute;
       width: 100%;
-
-      .logo{
-          display:grid;
-          justify-content: start;
-          width: 35%;
-      }
 
         .nav-ul {
           display: grid;
           grid-template-columns: 10rem 10rem 10rem 10rem;
-          justify-content: end;
+          justify-items: center;
+          align-items: center;
 
         .link {
               color: white;
               text-decoration: none;
               font-size: 1.2rem;
               font-family: 'Basil Regular';
+              padding-top: 5px;
+              padding-bottom: 5px;
+              padding-inline: 20px;
           }
+          .link:hover{
+              background-color: black;
+              color: white;
+          }
+
+          .router-link-exact-active {
+            font-size: 1.35rem;
+            background-color: white;
+            color: black;
+          }
+
       }
   }
 </style>

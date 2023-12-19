@@ -1,5 +1,5 @@
 <template>
-  <div class="indexMain">
+  <div class="homeMain">
     <div class="headings">
         <h1 class="first-h1">Майсторство</h1>
         <h3>без компромиси</h3>
@@ -13,16 +13,7 @@
 </script>
 
 <style lang="scss">
-
-@font-face {
-  font-family: 'Basil Regular';
-  src: url('/Basil-Regular.ttf') format('truetype'),
-       url('/Basil-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-  .indexMain{
+  .homeMain{
     margin-top: 0%;
     height:80vh;
     background-image: url('/house3.png');
