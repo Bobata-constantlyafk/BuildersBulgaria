@@ -37,7 +37,7 @@
       background-color: rgb(0,0,0,0.9);
       margin-bottom: 0rem;
       position:static;
-      width: 90%;
+      width: 99%;
 
         .nav-ul {
           display: grid;
