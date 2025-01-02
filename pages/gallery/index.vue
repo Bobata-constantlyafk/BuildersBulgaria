@@ -1,37 +1,19 @@
 <template>
   <div class="galleryMain">
     <NuxtLink :to="'/gallery/House-trad'">
-      <img class="gallery-image" :src="houseTradImage" alt="house">
+      <img class="gallery-image" src="@/public/House-trad.png" alt="house">
     </NuxtLink>
     <NuxtLink :to="'/gallery/House-modern'">
-      <img class="gallery-image" :src="houseModernImage" alt="house">
+      <img class="gallery-image" src="@/public/House-modern.png" alt="house">
     </NuxtLink>
     <NuxtLink :to="'/gallery/Italian-house'">
-      <img class="gallery-image" :src="italianHouseImage" alt="house">
+      <img class="gallery-image" src="@/public/Italian-house.png" alt="house">
     </NuxtLink>
     <NuxtLink :to="'/gallery/house-example'">
-      <img class="gallery-image" :src="houseExampleImage" alt="house">
+      <img class="gallery-image" src="@/public/house-example.jpg" alt="house">
     </NuxtLink>
   </div>
 </template>
-
-<script>
-import houseTradImage from '@/public/House-trad.png';
-import houseModernImage from '@/public/House-modern.png';
-import italianHouseImage from '@/public/Italian-house.png';
-import houseExampleImage from '@/public/house-example.jpg';
-
-export default {
-  data() {
-    return {
-      houseTradImage,
-      houseModernImage,
-      italianHouseImage,
-      houseExampleImage,
-    };
-  },
-};
-</script>
 
 <style lang="scss">
 .galleryMain {
@@ -44,8 +26,8 @@ export default {
 }
 
 .gallery-image {
-  width: 100%;
+  width: 100%; 
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
 }
 </style>
