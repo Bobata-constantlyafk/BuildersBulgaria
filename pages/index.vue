@@ -16,7 +16,12 @@ import Collabs from './collabs.vue';
 import Contacts from './contacts.vue';
 import Services from './services.vue';
 import Advantages from './advantages.vue';
+
 </script>
 
 <style lang="scss">
+html, body {
+  margin: 0px !important;
+  padding: 0px !important;
+}
 </style>

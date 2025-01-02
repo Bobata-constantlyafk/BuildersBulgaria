@@ -1,16 +1,21 @@
 <template>
   <div class="galleryMain">
-    <img class="gallery-image" src="/House-Trad.png" alt="house">
-    <img class="gallery-image" src="/House-modern.png" alt="house">
-    <img class="gallery-image" src="/Italian-house.png" alt="house">
-    <img class="gallery-image" src="/house-example.jpg" alt="house">
+    <NuxtLink :to="'/gallery/House-trad'">
+      <img class="gallery-image" src="/House-trad.png" alt="house">
+    </NuxtLink>
+    <NuxtLink :to="'/gallery/House-modern'">
+      <img class="gallery-image" src="/House-modern.png" alt="house">
+    </NuxtLink>
+    <NuxtLink :to="'/gallery/Italian-house'">
+      <img class="gallery-image" src="/Italian-house.png" alt="house">
+    </NuxtLink>
+    <NuxtLink :to="'/gallery/house-example'">
+      <img class="gallery-image" src="/house-example.jpg" alt="house">
+    </NuxtLink>
   </div>
 </template>
 
-
-
 <style lang="scss">
-
 .galleryMain {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

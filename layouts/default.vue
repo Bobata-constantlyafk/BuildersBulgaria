@@ -1,6 +1,6 @@
 <template>
     <div>
-      <header>
+      <!-- <header>
         <nav class="nav">
           <ul class="nav-ul">
             <NuxtLink class="link" to="/">НАЧАЛО</NuxtLink>
@@ -9,7 +9,7 @@
             <NuxtLink class="link" to="/projects">ПРОЕКТИ</NuxtLink>
           </ul>
         </nav>
-      </header>
+      </header> -->
 
       <div>
         <slot/>
@@ -34,9 +34,9 @@
       display: grid;
       grid-template-columns: 1fr 4fr;
       align-items: center;
-      background-color: rgb(0,0,0,0.6);
+      background-color: rgb(0,0,0,0.9);
       margin-bottom: 0rem;
-      position:absolute;
+      position:static;
       width: 100%;
 
         .nav-ul {
