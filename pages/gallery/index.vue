@@ -1,10 +1,10 @@
 <template>
   <div class="galleryMain">
     <NuxtLink :to="'/gallery/metalHouses'">
-      <img class="gallery-image" src="https://i.imgur.com/AM0elk5.jpeg" alt="house">
+      <img class="gallery-image" src="https://i.imgur.com/Kj6Jre1.png" alt="house">
     </NuxtLink>
     <NuxtLink :to="'/gallery/ogradi'">
-      <img class="gallery-image" src="https://i.imgur.com/Z2N9t79.png" alt="house">
+      <img class="gallery-image" src="https://i.imgur.com/CSDBVvv.png" alt="house">
     </NuxtLink>
     <NuxtLink :to="'/gallery/sanirane'">
       <img class="gallery-image" src="https://i.imgur.com/UckWm1p.png" alt="house">
