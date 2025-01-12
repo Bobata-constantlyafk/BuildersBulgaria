@@ -1,16 +1,16 @@
 <template>
   <div class="galleryMain">
-    <NuxtLink :to="'/gallery/House-trad'">
-      <img class="gallery-image" src="https://i.imgur.com/hwjiXcD.jpeg" alt="house">
+    <NuxtLink :to="'/gallery/metalHouses'">
+      <img class="gallery-image" src="https://i.imgur.com/AM0elk5.jpeg" alt="house">
     </NuxtLink>
-    <NuxtLink :to="'/gallery/House-modern'">
-      <img class="gallery-image" src="https://i.imgur.com/Bbm0k1i.png" alt="house">
+    <NuxtLink :to="'/gallery/ogradi'">
+      <img class="gallery-image" src="https://i.imgur.com/Z2N9t79.png" alt="house">
     </NuxtLink>
-    <NuxtLink :to="'/gallery/Italian-house'">
-      <img class="gallery-image" src="https://i.imgur.com/jAub3iO.png" alt="house">
+    <NuxtLink :to="'/gallery/sanirane'">
+      <img class="gallery-image" src="https://i.imgur.com/UckWm1p.png" alt="house">
     </NuxtLink>
-    <NuxtLink :to="'/gallery/house-example'">
-      <img class="gallery-image" src="https://i.imgur.com/UaU2kIe.jpeg" alt="house">
+    <NuxtLink :to="'/gallery/podporniSteni'">
+      <img class="gallery-image" src="https://i.imgur.com/5TEkWlp.png" alt="house">
     </NuxtLink>
   </div>
 </template>
