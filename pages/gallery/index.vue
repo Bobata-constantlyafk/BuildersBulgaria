@@ -1,16 +1,16 @@
 <template>
   <div class="galleryMain">
     <NuxtLink :to="'/gallery/metalHouses'">
-      <img class="gallery-image" src="https://i.imgur.com/Kj6Jre1.png" alt="house">
+      <img class="gallery-image" src="https://i.imgur.com/ObzcPVW.png" alt="metalniKushti">
     </NuxtLink>
     <NuxtLink :to="'/gallery/ogradi'">
-      <img class="gallery-image" src="https://i.imgur.com/CSDBVvv.png" alt="house">
+      <img class="gallery-image" src="https://i.imgur.com/2paexcy.png" alt="fences">
     </NuxtLink>
     <NuxtLink :to="'/gallery/sanirane'">
-      <img class="gallery-image" src="https://i.imgur.com/UckWm1p.png" alt="house">
+      <img class="gallery-image" src="https://i.imgur.com/ceWzq7q.png" alt="sanirane">
     </NuxtLink>
     <NuxtLink :to="'/gallery/podporniSteni'">
-      <img class="gallery-image" src="https://i.imgur.com/5TEkWlp.png" alt="house">
+      <img class="gallery-image" src="https://i.imgur.com/WrxKi1Z.png" alt="podporniSteni">
     </NuxtLink>
   </div>
 </template>
