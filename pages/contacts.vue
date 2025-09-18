@@ -102,8 +102,6 @@
       }
       p{
         font-size: 1.5rem;
-        color:white;
-        background-color: black;
       }
 
       h1{
@@ -111,8 +109,6 @@
       }
 
       .email {
-        color: white;
-        background: black;
         padding: 0.2em 0.5em;
       }
     }
