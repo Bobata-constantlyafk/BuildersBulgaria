@@ -75,6 +75,8 @@
     height: auto;
     border: none;
     background: none;
+    padding-top: -10rem;
+    overflow-x: hidden;
 
     .contactsInfo {
       display: flex;
@@ -82,7 +84,6 @@
       align-items: center;
       text-align: center;
       margin: 0;
-      margin: -15rem;
       background: none;
       padding-bottom: 12rem;
 
