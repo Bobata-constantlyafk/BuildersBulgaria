@@ -13,7 +13,7 @@
       </div>
 
       <div>
-        <img class="services-image" src="/housemaking.png" alt="Teteven">
+        <img class="services-image" src="/houseRepair.png" alt="Teteven">
         <h2>Ремонт</h2>
       </div>
     </div>
@@ -27,6 +27,8 @@
   justify-content: center;
   height: 100%;
   overflow: hidden;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 
   h1,h2{
     text-align: center;
@@ -43,7 +45,6 @@
   }
 
   .services-images{
-    padding-top: 2rem;
     display: grid;
     grid-template-columns: 30rem 30rem 30rem;
     justify-items: center;
@@ -52,6 +53,34 @@
       width: auto;
       height: 250px;
       }
+  }
+}
+@media (max-width: 768px) {
+  .servicesMain {
+    grid-template-rows: 100px auto;
+    height: auto;
+    padding-top: 15rem;
+    padding-bottom: 0rem;
+
+    h1 {
+      font-size: 3.9em;
+      margin-top: 6rem;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    .services-images {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      gap: 6rem;
+      padding: 1rem 0;
+
+      .services-image {
+        height: 150px;
+      }
+    }
   }
 }
 </style>

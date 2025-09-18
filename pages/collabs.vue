@@ -37,4 +37,27 @@
       }
   }
 }
+@media (max-width: 768px) {
+  .collabsMain {
+    grid-template-rows: 100px auto;
+    height: auto;
+    padding-top: 6rem;
+
+    h1 {
+      font-size: 3rem;
+      padding-top: 6rem;
+    }
+
+    .collabs-images {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      gap: 1.5rem;
+      padding: 1rem 0;
+
+      .collabs-image {
+        height: 150px;
+      }
+    }
+  }
+}
 </style>

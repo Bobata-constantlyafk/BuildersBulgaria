@@ -46,4 +46,30 @@
         }
     }
   }
+
+ @media (max-width: 768px) {
+  .homeMain {
+    height: 40vh;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+
+    .headings {
+      position: static;
+      transform: none;
+      text-align: center;
+
+      h1 {
+        font-size: 2.1rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      .second-h1 {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
 </style>

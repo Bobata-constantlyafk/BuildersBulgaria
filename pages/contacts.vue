@@ -23,11 +23,11 @@
 </script>
 
 <style lang="scss">
-.contactsNewMain{
+.contactsNewMain {
   display: grid;
-  height:88vh;
+  height: 88vh;
   width: auto;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat; 
   background-image: url('/House-modern-hq.png');
   border: 104px solid black;
@@ -35,7 +35,7 @@
   border-top: 50px solid black;
   border-left: none;
 
-  .contactsInfo{
+  .contactsInfo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: space-between;
@@ -46,26 +46,77 @@
     padding-right: 2em;
     background-color: #000;
     
-    h1,h2, p{
-    color: white;
-    font-family: 'Basil Regular';
+    h1, h2, p {
+      color: white;
+      font-family: 'Basil Regular';
     }
-    h1{
+    h1 {
       font-size: 3em;
       margin-top: 0rem;
     }
     h2 {
       font-size: 1.8rem;
     }
-    p{
+    p {
       font-size: 1.1em;
     }
-    .email{
+    .email {
       color: black;
       background-color: white;
     }
   }
-  
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .contactsNewMain {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: none;
+    background: none;
+
+    .contactsInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0;
+      margin: -15rem;
+      background: none;
+      padding-bottom: 12rem;
+
+
+      h1, h2, p {
+        color: black;
+      }
+
+      h1{
+        font-size: 3.6rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        padding-bottom: 0rem;
+        margin-bottom: -1rem;
+      }
+      p{
+        font-size: 1.5rem;
+        color:white;
+        background-color: black;
+      }
+
+      h1{
+        align-self: center;
+      }
+
+      .email {
+        color: white;
+        background: black;
+        padding: 0.2em 0.5em;
+      }
+    }
+  }
 }
 </style>
   
