@@ -1,9 +1,10 @@
 <template>
   <div class="galleryPageMain">
+    <h1>Галерия</h1>
+    <h2>{{ translatedText }}</h2>
     <div class="imageContainer">
       <img v-for="(src, index) in imageSrcArray" :key="index" :src="src" alt="House Image" />
     </div>
-    <p>{{ text }}</p>
   </div>
 </template>
 
@@ -14,25 +15,41 @@ import { useFetch } from '#app';
 
 const imageSrcArray = ref([]);
 const text = ref('');
+const translatedText = ref('');
 const route = useRoute();
+
+function translateRoute(name) {
+  const translations = {
+    metalHouses: "Метални къщи",
+    ogradi: "Огради",
+    Saniranev: "Санировки",
+    PodporniSteni: "Подпорни стени"
+  };
+  return translations[name] || name;
+}
+
+async function fetchImages(houseType) {
+  if (!houseType) {
+    imageSrcArray.value = [];
+    text.value = 'No house type selected.';
+    return;
+  }
+
+  const { data, error } = await useFetch(`/api/getImages?houseType=${houseType}`);
+
+  if (!error.value) {
+    imageSrcArray.value = data.value;
+    text.value = `${houseType.charAt(0).toUpperCase() + houseType.slice(1)}`;
+  } else {
+    console.error('Error fetching images:', error.value);
+    text.value = 'Error loading images.';
+  }
+}
 
 onMounted(async () => {
   const houseType = route.params.name;
-  console.log('House Type:', houseType);
-
-  if (houseType) {
-    const { data, error } = await useFetch(`/api/getImages?houseType=${houseType}`);
-    if (!error.value) {
-      imageSrcArray.value = data.value;
-      text.value = `${houseType.charAt(0).toUpperCase() + houseType.slice(1)}`;
-    } else {
-      console.error('Error fetching images:', error.value);
-      text.value = 'Error loading images.';
-    }
-  } else {
-    imageSrcArray.value = [];
-    text.value = 'No house type selected.';
-  }
+  translatedText.value = translateRoute(houseType);
+  await fetchImages(houseType);
 });
 </script>
 
@@ -43,8 +60,22 @@ onMounted(async () => {
 
   img {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     object-fit: cover;
+  }
+
+  h1{
+    font-family: 'Basil Regular';
+    font-size: 4rem;
+    margin: 0 auto;
+    margin-top: 1vw;
+  }
+
+  h2{
+    font-family: 'Basil Regular';
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-bottom: 6vw;
   }
 
   p {
