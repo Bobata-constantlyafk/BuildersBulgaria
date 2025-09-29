@@ -2,9 +2,12 @@
   <div class="galleryPageMain">
     <h1>Галерия</h1>
     <h2>{{ translatedText }}</h2>
-    <div class="imageContainer">
-      <img v-for="(src, index) in imageSrcArray" :key="index" :src="src" alt="House Image" />
-    </div>
+
+    <Splide :options="{ type: 'loop', autoplay: true, pagination: true, arrows: true }">
+      <SplideSlide v-for="(src, index) in imageSrcArray" :key="index">
+        <img :src="src" alt="House Image" />
+      </SplideSlide>
+    </Splide>
   </div>
 </template>
 
@@ -12,9 +15,10 @@
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useFetch } from '#app';
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import '@splidejs/splide/dist/css/splide.min.css';
 
 const imageSrcArray = ref([]);
-const text = ref('');
 const translatedText = ref('');
 const route = useRoute();
 
@@ -22,8 +26,8 @@ function translateRoute(name) {
   const translations = {
     metalHouses: "Метални къщи",
     ogradi: "Огради",
-    Saniranev: "Санировки",
-    PodporniSteni: "Подпорни стени"
+    sanirane: "Санировки",
+    podporniSteni: "Подпорни стени"
   };
   return translations[name] || name;
 }
@@ -31,7 +35,6 @@ function translateRoute(name) {
 async function fetchImages(houseType) {
   if (!houseType) {
     imageSrcArray.value = [];
-    text.value = 'No house type selected.';
     return;
   }
 
@@ -39,10 +42,8 @@ async function fetchImages(houseType) {
 
   if (!error.value) {
     imageSrcArray.value = data.value;
-    text.value = `${houseType.charAt(0).toUpperCase() + houseType.slice(1)}`;
   } else {
     console.error('Error fetching images:', error.value);
-    text.value = 'Error loading images.';
   }
 }
 
@@ -56,34 +57,35 @@ onMounted(async () => {
 <style lang="scss" scoped>
 .galleryPageMain {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  padding-bottom: 10rem;
 
-  img {
-    width: 100vw;
-    height: auto;
-    object-fit: cover;
-  }
-
-  h1{
+  h1 {
     font-family: 'Basil Regular';
     font-size: 4rem;
     margin: 0 auto;
     margin-top: 1vw;
   }
 
-  h2{
+  h2 {
     font-family: 'Basil Regular';
     font-size: 2rem;
     margin: 0 auto;
-    margin-bottom: 6vw;
+    margin-bottom: 3vw;
   }
 
-  p {
-    font-family: 'Basil Regular';
-    font-size: 1.5rem;
-    margin: 0 auto;
-    margin-top: 2vw;
-    max-width: 50%;
+  .splide {
+    width: 100%;
+    max-width: 1200px;
+
+    img {
+      width: 100%;
+      height: 600px; /* 🔥 Fixed height */
+      object-fit: contain; /* keep proportions, add black bars if needed */
+      background: black; /* black bars for empty space */
+      border-radius: 12px;
+    }
   }
 }
 </style>
