@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, defineProps } from 'vue'
+import { ref } from 'vue'
 import { ArrowLeft, ArrowRight } from 'lucide-vue-next'
 
 const props = defineProps<{

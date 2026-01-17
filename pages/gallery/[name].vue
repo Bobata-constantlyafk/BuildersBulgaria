@@ -3,7 +3,6 @@
     <h1>Галерия</h1>
     <h2>{{ translatedText }}</h2>
 
-    <!-- -b- Wrap Splide in Client Only -->
     <Splide :options="{ type: 'loop', autoplay: true, pagination: true, arrows: true }">
       <SplideSlide v-for="(src, index) in imageSrcArray" :key="index">
         <img :src="src" alt="House Image" />
@@ -16,7 +15,6 @@
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useFetch } from '#app';
-import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css';
 
 const imageSrcArray = ref([]);
