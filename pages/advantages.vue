@@ -30,7 +30,15 @@
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
+
+  h1{
+    text-align: center;
+    align-self: end;
+    font-size: 3.3rem;
+    font-family: 'Basil Regular';
+    padding-top: 0vw;
+  }
 .advantagesMain {
   height: 100vh;
   display: grid;

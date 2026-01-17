@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 
 h1{
     text-align: center;
