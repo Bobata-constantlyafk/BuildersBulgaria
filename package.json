@@ -10,13 +10,14 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest",
+    "@nuxt/devtools": "^3.1.1",
     "nuxt": "^3.8.1",
     "sass": "^1.69.5",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "@splidejs/vue-splide": "^0.6.12",
     "lucide-vue-next": "^0.544.0"
   }
